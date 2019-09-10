@@ -77,7 +77,7 @@ func (b *UpdateBuilder) Type(entity interface{}) *UpdateBuilder {
 			config[v] = true
 		}
 
-		if value == nil || config["autoincrement"] || config["omitted"] {
+		if value == nil || config["omitted"] {
 			continue
 		}
 
